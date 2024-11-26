@@ -30,7 +30,7 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 16MB max file size
 
 CLASSIFIER_REGISTRY = {
     'logistic_regression': LogisticRegression(max_iter=1000),
