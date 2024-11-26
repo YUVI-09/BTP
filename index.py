@@ -42,7 +42,7 @@ CLASSIFIER_REGISTRY = {
 }
 
 REGRESSOR_REGISTRY = {
-    'linear_regression': LinearRegression(),
+    # 'linear_regression': LinearRegression(),
     'xgboost_regressor': XGBRegressor(),
     'decision_tree_regressor': DecisionTreeRegressor(),
     'random_forest_regressor': RandomForestRegressor(n_estimators=100)
